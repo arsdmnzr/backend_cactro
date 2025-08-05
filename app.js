@@ -26,7 +26,7 @@ app.get('/spotify/callback', async (req, res) => {
   res.send(`✅ Spotify Access Token:<br><code>${accessToken}</code>`);
 });
 
-app.get('/spotify-overview', async (req, res) => {
+app.get('/top-10', async (req, res) => {
   try {
     const accessToken = await getAccessTokenFromRefreshToken();
 
